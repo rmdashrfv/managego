@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tenant_id: 1
+  apartment_id: 1
+  note: MyText
+  urgency: 1
+  resolved: false
+
+two:
+  tenant_id: 1
+  apartment_id: 1
+  note: MyText
+  urgency: 1
+  resolved: false
