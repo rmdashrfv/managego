@@ -21,6 +21,7 @@ class Apartment < ApplicationRecord
     # lease.update(tenant_id: tenant.id, active: true)
     lease.tenant = tenant
     lease.active = true
+    self.lease_id = lease.id
     lease.save
   end
 end
