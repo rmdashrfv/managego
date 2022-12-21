@@ -14,4 +14,8 @@
 class Tenant < ApplicationRecord
   belongs_to :lease, optional: true
   belongs_to :maintenance_ticket, optional: true
+
+  def lease
+    Lease.find_by!(tenant_id: self.id)
+  end
 end
